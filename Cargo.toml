@@ -16,7 +16,7 @@ atlas = []
 render = []
 
 [dependencies]
-bevy = { version = "0.11", default-features = false, features = [
+bevy = { git = "https://github.com/bevyengine/bevy.git", rev = "e8b38925174cea58c08877a7b410443dafe918ce", default-features = false, features = [
     "bevy_core_pipeline",
     "bevy_render",
     "bevy_asset",
@@ -34,7 +34,8 @@ serde_json = { version = "1.0" }
 tiled = { version = "0.11.0", default-features = false }
 
 [dev-dependencies.bevy]
-version = "0.11"
+git = "https://github.com/bevyengine/bevy.git"
+rev = "e8b38925174cea58c08877a7b410443dafe918ce"
 default-features = false
 features = [
     "bevy_core_pipeline",
@@ -46,11 +47,12 @@ features = [
     "bevy_text",
     "bevy_sprite",
     "filesystem_watcher",
-    "webgl2"
+    "webgl2",
 ]
 
 [target.'cfg(unix)'.dev-dependencies.bevy]
-version = "0.11"
+git = "https://github.com/bevyengine/bevy.git"
+rev = "e8b38925174cea58c08877a7b410443dafe918ce"
 default-features = false
 features = [
     "bevy_core_pipeline",
@@ -66,118 +68,118 @@ features = [
 
 
 [[example]]
-name="3d_iso"
-path="examples/3d_iso.rs"
-required-features=["render"]
+name = "3d_iso"
+path = "examples/3d_iso.rs"
+required-features = ["render"]
 [[example]]
-name="accessing_tiles"
-path="examples/accessing_tiles.rs"
-required-features=["render"]
+name = "accessing_tiles"
+path = "examples/accessing_tiles.rs"
+required-features = ["render"]
 [[example]]
-name="animation"
-path="examples/animation.rs"
-required-features=["render"]
+name = "animation"
+path = "examples/animation.rs"
+required-features = ["render"]
 [[example]]
-name="basic"
-path="examples/basic.rs"
-required-features=["render"]
+name = "basic"
+path = "examples/basic.rs"
+required-features = ["render"]
 [[example]]
-name="bench"
-path="examples/bench.rs"
-required-features=["render"]
+name = "bench"
+path = "examples/bench.rs"
+required-features = ["render"]
 [[example]]
-name="chunking"
-path="examples/chunking.rs"
-required-features=["render"]
+name = "chunking"
+path = "examples/chunking.rs"
+required-features = ["render"]
 [[example]]
-name="colors"
-path="examples/colors.rs"
-required-features=["render"]
+name = "colors"
+path = "examples/colors.rs"
+required-features = ["render"]
 [[example]]
-name="custom_shader"
-path="examples/custom_shader.rs"
-required-features=["render"]
+name = "custom_shader"
+path = "examples/custom_shader.rs"
+required-features = ["render"]
 [[example]]
-name="frustum_cull_test"
-path="examples/frustum_cull_test.rs"
-required-features=["render"]
+name = "frustum_cull_test"
+path = "examples/frustum_cull_test.rs"
+required-features = ["render"]
 [[example]]
-name="game_of_life"
-path="examples/game_of_life.rs"
-required-features=["render"]
+name = "game_of_life"
+path = "examples/game_of_life.rs"
+required-features = ["render"]
 [[example]]
-name="hex_neighbors_radius_chunks"
-path="examples/hex_neighbors_radius_chunks.rs"
-required-features=["render"]
+name = "hex_neighbors_radius_chunks"
+path = "examples/hex_neighbors_radius_chunks.rs"
+required-features = ["render"]
 [[example]]
-name="hex_neighbors"
-path="examples/hex_neighbors.rs"
-required-features=["render"]
+name = "hex_neighbors"
+path = "examples/hex_neighbors.rs"
+required-features = ["render"]
 [[example]]
-name="hexagon_column"
-path="examples/hexagon_column.rs"
-required-features=["render"]
+name = "hexagon_column"
+path = "examples/hexagon_column.rs"
+required-features = ["render"]
 [[example]]
-name="hexagon_generation"
-path="examples/hexagon_generation.rs"
-required-features=["render"]
+name = "hexagon_generation"
+path = "examples/hexagon_generation.rs"
+required-features = ["render"]
 [[example]]
-name="hexagon_row"
-path="examples/hexagon_row.rs"
-required-features=["render"]
+name = "hexagon_row"
+path = "examples/hexagon_row.rs"
+required-features = ["render"]
 [[example]]
-name="iso_diamond"
-path="examples/iso_diamond.rs"
-required-features=["render"]
+name = "iso_diamond"
+path = "examples/iso_diamond.rs"
+required-features = ["render"]
 [[example]]
-name="iso_staggered"
-path="examples/iso_staggered.rs"
-required-features=["render"]
+name = "iso_staggered"
+path = "examples/iso_staggered.rs"
+required-features = ["render"]
 [[example]]
-name="layers"
-path="examples/layers.rs"
-required-features=["render"]
+name = "layers"
+path = "examples/layers.rs"
+required-features = ["render"]
 [[example]]
-name="ldtk"
-path="examples/ldtk.rs"
-required-features=["render"]
+name = "ldtk"
+path = "examples/ldtk.rs"
+required-features = ["render"]
 [[example]]
-name="mouse_to_tile"
-path="examples/mouse_to_tile.rs"
-required-features=["render"]
+name = "mouse_to_tile"
+path = "examples/mouse_to_tile.rs"
+required-features = ["render"]
 [[example]]
-name="move_tile"
-path="examples/move_tile.rs"
-required-features=["render"]
+name = "move_tile"
+path = "examples/move_tile.rs"
+required-features = ["render"]
 [[example]]
-name="random_map"
-path="examples/random_map.rs"
-required-features=["render"]
+name = "random_map"
+path = "examples/random_map.rs"
+required-features = ["render"]
 [[example]]
-name="remove_tiles"
-path="examples/remove_tiles.rs"
-required-features=["render"]
+name = "remove_tiles"
+path = "examples/remove_tiles.rs"
+required-features = ["render"]
 [[example]]
-name="spacing"
-path="examples/spacing.rs"
-required-features=["render"]
+name = "spacing"
+path = "examples/spacing.rs"
+required-features = ["render"]
 [[example]]
-name="texture_container"
-path="examples/texture_container.rs"
-required-features=["render"]
+name = "texture_container"
+path = "examples/texture_container.rs"
+required-features = ["render"]
 [[example]]
-name="texture_vec"
-path="examples/texture_vec.rs"
-required-features=["render"]
+name = "texture_vec"
+path = "examples/texture_vec.rs"
+required-features = ["render"]
 [[example]]
-name="tiled_rotated"
-path="examples/tiled_rotated.rs"
-required-features=["render"]
+name = "tiled_rotated"
+path = "examples/tiled_rotated.rs"
+required-features = ["render"]
 [[example]]
-name="tiled"
-path="examples/tiled.rs"
-required-features=["render"]
+name = "tiled"
+path = "examples/tiled.rs"
+required-features = ["render"]
 [[example]]
-name="visibility"
-path="examples/visibility.rs"
-required-features=["render"]
+name = "visibility"
+path = "examples/visibility.rs"
+required-features = ["render"]
