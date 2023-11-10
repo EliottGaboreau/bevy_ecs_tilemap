@@ -16,7 +16,7 @@ atlas = []
 render = []
 
 [dependencies]
-bevy = { git = "https://github.com/bevyengine/bevy.git", rev = "e8b38925174cea58c08877a7b410443dafe918ce", default-features = false, features = [
+bevy = { git = "https://github.com/bevyengine/bevy.git", rev = "4f1d9a63152589d5286647e68cc3ce0e67f1838c", default-features = false, features = [
     "bevy_core_pipeline",
     "bevy_render",
     "bevy_asset",
@@ -35,7 +35,7 @@ tiled = { version = "0.11.0", default-features = false }
 
 [dev-dependencies.bevy]
 git = "https://github.com/bevyengine/bevy.git"
-rev = "e8b38925174cea58c08877a7b410443dafe918ce"
+rev = "4f1d9a63152589d5286647e68cc3ce0e67f1838c"
 default-features = false
 features = [
     "bevy_core_pipeline",
@@ -52,7 +52,7 @@ features = [
 
 [target.'cfg(unix)'.dev-dependencies.bevy]
 git = "https://github.com/bevyengine/bevy.git"
-rev = "e8b38925174cea58c08877a7b410443dafe918ce"
+rev = "4f1d9a63152589d5286647e68cc3ce0e67f1838c"
 default-features = false
 features = [
     "bevy_core_pipeline",
